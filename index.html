@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shapipy.</title>
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- External CSS -->
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- NAVIGATION START -->
+    <nav class="navbar navbar-expand-lg navbar-dark shapipy-navbar sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                <i class="bi bi-vinyl-fill text-warning"></i>Shapipy<span>.</span>
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-1">
+                    <li class="nav-item"><a class="nav-link active" href="#"><i class="bi bi-house-door me-1"></i>Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-calendar-event me-1"></i>Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-gem me-1"></i>VIP</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-info-circle me-1"></i>About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-envelope me-1"></i>Contact</a></li>
+                </ul>
+
+                <div class="d-flex flex-column flex-lg-row align-items-lg-center gap-2 mt-2 mt-lg-0">
+                    <a href="#" class="btn btn-register btn-sm px-3 py-2"><i class="bi bi-person-plus me-1"></i>Register</a>
+                    <a href="#" class="btn btn-login btn-sm px-3 py-2"><i class="bi bi-box-arrow-in-right me-1"></i>Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- NAVIGATION END -->
+
+    <!-- BODY START (SINGLE CONTAINER) -->
+    <main class="main-wrapper">
+        <div class="container">
+            <!-- HERO SLIDER START -->
+            <section id="hero-section" class="hero-section pt-4 pb-2">
+                <div id="heroCarousel" class="carousel slide carousel-fade hero-carousel-wrapper rounded-4 overflow-hidden" data-bs-ride="carousel" data-bs-interval="5500">
+                    
+                    <div class="carousel-indicators hero-indicators">
+                        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <div class="hero-slide hero-slide-1">
+                                <div class="hero-overlay"></div>
+                                <div class="hero-content position-relative z-2 p-4 p-md-5">
+                                    <div class="col-lg-8">
+                                        <span class="hero-badge mb-3 d-inline-block"><i class="bi bi-star-fill me-1"></i>Featured Headliner &bull; Nov 21</span>
+                                        <h1 class="display-5 fw-bold mb-3">Neon Noir Symphony: Manila Edition</h1>
+                                        <p class="lead mb-4">Experience an immersive nocturnal audiovisual takeover at The Palace Pool Club, BGC. VIP bottle service and sky-deck tables available.</p>
+                                        <div class="d-flex flex-wrap align-items-center gap-3">
+                                            <a href="#" class="btn btn-login px-4 py-2"><i class="bi bi-ticket-perforated me-1"></i>Reserve VIP Pass &bull; ₱4,800</a>
+                                            <a href="#" class="btn btn-register px-4 py-2"><i class="bi bi-compass me-1"></i>Explore Lineup</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="hero-slide hero-slide-2">
+                                <div class="hero-overlay"></div>
+                                <div class="hero-content position-relative z-2 p-4 p-md-5">
+                                    <div class="col-lg-8">
+                                        <span class="hero-badge mb-3 d-inline-block"><i class="bi bi-stars me-1"></i>Black Tie Gala &bull; Dec 05</span>
+                                        <h1 class="display-5 fw-bold mb-3">Winter Masquerade at The Fort</h1>
+                                        <p class="lead mb-4">Step into an evening of velvet elegance, live orchestral fusion, and curated cocktails at Shangri-La Grand Ballroom.</p>
+                                        <div class="d-flex flex-wrap align-items-center gap-3">
+                                            <a href="#" class="btn btn-login px-4 py-2"><i class="bi bi-ticket-perforated me-1"></i>Get Gala Tickets &bull; ₱8,500</a>
+                                            <a href="#b" class="btn btn-register px-4 py-2"><i class="bi bi-shield-check me-1"></i>View Dress Code</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="hero-slide hero-slide-3">
+                                <div class="hero-overlay"></div>
+                                <div class="hero-content position-relative z-2 p-4 p-md-5">
+                                    <div class="col-lg-8">
+                                        <span class="hero-badge mb-3 d-inline-block"><i class="bi bi-bell-fill me-1"></i>NYE Countdown &bull; Dec 31</span>
+                                        <h1 class="display-5 fw-bold mb-3">2027 Gold Champagne Gala</h1>
+                                        <p class="lead mb-4">Ring in 2027 poolside by Manila Bay at Okada Manila Cove with international guest DJs and midnight pyrotechnics.</p>
+                                        <div class="d-flex flex-wrap align-items-center gap-3">
+                                            <a href="#" class="btn btn-login px-4 py-2"><i class="bi bi-ticket-perforated me-1"></i>Book NYE Table &bull; ₱12,000</a>
+                                            <a href="#" class="btn btn-register px-4 py-2"><i class="bi bi-gift me-1"></i>See Packages</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button class="carousel-control-prev hero-control" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev" aria-label="Previous slide">
+                        <span class="btn-slider-ctrl">
+                            <i class="bi bi-chevron-left"></i>
+                        </span>
+                    </button>
+                    <button class="carousel-control-next hero-control" type="button" data-bs-target="#heroCarousel" data-bs-slide="next" aria-label="Next slide">
+                        <span class="btn-slider-ctrl">
+                            <i class="bi bi-chevron-right"></i>
+                        </span>
+                    </button>
+
+                </div>
+            </section>
+            <!-- HERO SLIDER END -->
+
+			<!-- BROWSE EVENT START -->
+            <section id="browse-events" class="browse-events py-5">
+                <div class="d-flex flex-column flex-sm-row justify-content-between align-items-sm-end mb-4 gap-3">
+                    <div>
+                        <span class="text-uppercase small fw-bold browse-lineup-title"><i class="bi bi-sliders me-1"></i>Curated Lineup</span>
+                        <h2 class="fw-bold mb-0 mt-1">Browse Upcoming Events</h2>
+                    </div>
+
+                    <div class="d-flex gap-2">
+                        <button class="btn btn-slider-ctrl" type="button" data-bs-target="#eventCarousel" data-bs-slide="prev" aria-label="Previous events">
+                            <i class="bi bi-chevron-left"></i>
+                        </button>
+                        <button class="btn btn-slider-ctrl" type="button" data-bs-target="#eventCarousel" data-bs-slide="next" aria-label="Next events">
+                            <i class="bi bi-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div id="eventCarousel" class="carousel slide" data-bs-ride="false">
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <div class="row g-4">
+
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="card event-card h-100 rounded-4 overflow-hidden">
+                                        <div class="position-relative">
+                                            <img src="https://placehold.co/800x450/1c1c1f/f3c64f?text=Event+1" class="card-img-top event-card-img" alt="Event 1">
+                                            <span class="event-date-badge"><i class="bi bi-calendar3 me-1"></i>NOV 21</span>
+                                        </div>
+                                        <div class="card-body d-flex flex-column p-4">
+                                            <span class="event-category mb-1">Category 1</span>
+                                            <h5 class="card-title fw-bold mb-2">Event 1</h5>
+                                            <p class="card-text small mb-4">
+                                                <i class="bi bi-geo-alt me-1"></i>Place 1
+                                            </p>
+                                            <div class="mt-auto d-flex justify-content-between align-items-center pt-3 border-top border-secondary border-opacity-25">
+                                                <div>
+                                                    <small class="d-block card-starting-text">Starting at</small>
+                                                    <span class="fw-bold card-price">₱4,800</span>
+                                                </div>
+                                                <a href="#" class="btn btn-register btn-sm px-3 py-2"><i class="bi bi-ticket me-1"></i>Get Tickets</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="card event-card h-100 rounded-4 overflow-hidden">
+                                        <div class="position-relative">
+                                            <img src="https://placehold.co/800x450/1c1c1f/f3c64f?text=Event+2" class="card-img-top event-card-img" alt="Event 2">
+                                            <span class="event-date-badge"><i class="bi bi-calendar3 me-1"></i>NOV 28</span>
+                                        </div>
+                                        <div class="card-body d-flex flex-column p-4">
+                                            <span class="event-category mb-1">Category 2</span>
+                                            <h5 class="card-title fw-bold mb-2">Event 2</h5>
+                                            <p class="card-text small mb-4">
+                                                <i class="bi bi-geo-alt me-1"></i>Place 2
+                                            </p>
+                                            <div class="mt-auto d-flex justify-content-between align-items-center pt-3 border-top border-secondary border-opacity-25">
+                                                <div>
+                                                    <small class="d-block card-starting-text">Starting at</small>
+                                                    <span class="fw-bold card-price">₱3,600</span>
+                                                </div>
+                                                <a href="#" class="btn btn-register btn-sm px-3 py-2"><i class="bi bi-ticket me-1"></i>Get Tickets</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="card event-card h-100 rounded-4 overflow-hidden">
+                                        <div class="position-relative">
+                                            <img src="https://placehold.co/800x450/1c1c1f/f3c64f?text=Event+3" class="card-img-top event-card-img" alt="Event 3">
+                                            <span class="event-date-badge"><i class="bi bi-calendar3 me-1"></i>DEC 05</span>
+                                        </div>
+                                        <div class="card-body d-flex flex-column p-4">
+                                            <span class="event-category mb-1">Category 3</span>
+                                            <h5 class="card-title fw-bold mb-2">Event 3</h5>
+                                            <p class="card-text small mb-4">
+                                                <i class="bi bi-geo-alt me-1"></i>Place 3
+                                            </p>
+                                            <div class="mt-auto d-flex justify-content-between align-items-center pt-3 border-top border-secondary border-opacity-25">
+                                                <div>
+                                                    <small class="d-block card-starting-text">Starting at</small>
+                                                    <span class="fw-bold card-price">₱8,500</span>
+                                                </div>
+                                                <a href="#" class="btn btn-register btn-sm px-3 py-2"><i class="bi bi-ticket me-1"></i>Get Tickets</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row g-4">
+
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="card event-card h-100 rounded-4 overflow-hidden">
+                                        <div class="position-relative">
+                                            <img src="https://placehold.co/800x450/1c1c1f/f3c64f?text=Event+4" class="card-img-top event-card-img" alt="Event 4">
+                                            <span class="event-date-badge"><i class="bi bi-calendar3 me-1"></i>DEC 12</span>
+                                        </div>
+                                        <div class="card-body d-flex flex-column p-4">
+                                            <span class="event-category mb-1">Category 4</span>
+                                            <h5 class="card-title fw-bold mb-2">Event 4</h5>
+                                            <p class="card-text small mb-4">
+                                                <i class="bi bi-geo-alt me-1"></i>Place 4
+                                            </p>
+                                            <div class="mt-auto d-flex justify-content-between align-items-center pt-3 border-top border-secondary border-opacity-25">
+                                                <div>
+                                                    <small class="d-block card-starting-text">Starting at</small>
+                                                    <span class="fw-bold card-price">₱5,200</span>
+                                                </div>
+                                                <a href="#" class="btn btn-register btn-sm px-3 py-2"><i class="bi bi-ticket me-1"></i>Get Tickets</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="card event-card h-100 rounded-4 overflow-hidden">
+                                        <div class="position-relative">
+                                            <img src="https://placehold.co/800x450/1c1c1f/f3c64f?text=Event+5" class="card-img-top event-card-img" alt="Event 5">
+                                            <span class="event-date-badge"><i class="bi bi-calendar3 me-1"></i>DEC 19</span>
+                                        </div>
+                                        <div class="card-body d-flex flex-column p-4">
+                                            <span class="event-category mb-1">Category 5</span>
+                                            <h5 class="card-title fw-bold mb-2">Event 5</h5>
+                                            <p class="card-text small mb-4">
+                                                <i class="bi bi-geo-alt me-1"></i>Place 5
+                                            </p>
+                                            <div class="mt-auto d-flex justify-content-between align-items-center pt-3 border-top border-secondary border-opacity-25">
+                                                <div>
+                                                    <small class="d-block card-starting-text">Starting at</small>
+                                                    <span class="fw-bold card-price">₱3,000</span>
+                                                </div>
+                                                <a href="#" class="btn btn-register btn-sm px-3 py-2"><i class="bi bi-ticket me-1"></i>Get Tickets</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="card event-card h-100 rounded-4 overflow-hidden">
+                                        <div class="position-relative">
+                                            <img src="https://placehold.co/800x450/1c1c1f/f3c64f?text=Event+6" class="card-img-top event-card-img" alt="Event 6">
+                                            <span class="event-date-badge"><i class="bi bi-calendar3 me-1"></i>DEC 31</span>
+                                        </div>
+                                        <div class="card-body d-flex flex-column p-4">
+                                            <span class="event-category mb-1">Category 6</span>
+                                            <h5 class="card-title fw-bold mb-2">Event 6</h5>
+                                            <p class="card-text small mb-4">
+                                                <i class="bi bi-geo-alt me-1"></i>Place 6
+                                            </p>
+                                            <div class="mt-auto d-flex justify-content-between align-items-center pt-3 border-top border-secondary border-opacity-25">
+                                                <div>
+                                                    <small class="d-block card-starting-text">Starting at</small>
+                                                    <span class="fw-bold card-price">₱12,000</span>
+                                                </div>
+                                                <a href="#" class="btn btn-register btn-sm px-3 py-2"><i class="bi bi-ticket me-1"></i>Get Tickets</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- BROWSE EVENT END -->
+
+            <!-- HOST CTA BANNER START -->
+			<section id="host-cta" class="py-5 my-4">
+                <div class="card event-card p-4 p-md-5 rounded-4 border-warning border-opacity-50 position-relative overflow-hidden">
+                    <div class="row align-items-center position-relative z-2">
+                        <div class="col-lg-8 mb-4 mb-lg-0">
+                            <span class="text-uppercase small fw-bold text-warning letter-spacing-1">For Promoters &amp; Organizers</span>
+                            <h3 class="fw-bold mt-1 mb-2">Hosting an upscale event in Metro Manila?</h3>
+                            <p class="text-muted mb-0">Partner with Shapipy to sell tickets, manage attendee seating, and reach Manila’s premier audience for live events and experiences.</p>
+                        </div>
+                        <div class="col-lg-4 text-lg-end">
+                            <a href="#" class="btn btn-login px-4 py-3 fw-bold"><i class="bi bi-plus-circle me-2"></i>List Your Event</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- HOST CTA BANNER END -->
+        </div>
+    </main>
+    <!-- BODY END -->
+
+    <!-- FOOTER START -->
+    <footer class="shapipy-footer pt-5 pb-4 mt-auto">
+        <div class="container">
+            <div class="row g-4 pb-4 shapipy-footer-divider">
+
+                <div class="col-lg-4">
+                    <h5 class="mb-3 d-flex align-items-center gap-2">
+                        <i class="bi bi-vinyl-fill text-warning"></i>Shapipy<span>.</span>
+                    </h5>
+                    <p class="small mb-0 pe-lg-4">
+                        Your premier destination for exclusive live events, VIP experiences, and unforgettable performances.
+                    </p>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <h6>Quick Links</h6>
+                    <ul class="list-unstyled small d-flex flex-column gap-2">
+                        <li><a href="#"><i class="bi bi-chevron-right small me-1"></i>Home</a></li>
+                        <li><a href="#"><i class="bi bi-chevron-right small me-1"></i>Events</a></li>
+                        <li><a href="#"><i class="bi bi-chevron-right small me-1"></i>VIP</a></li>
+                        <li><a href="#"><i class="bi bi-chevron-right small me-1"></i>About</a></li>
+                        <li><a href="#"><i class="bi bi-chevron-right small me-1"></i>Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <h6>Account &amp; Support</h6>
+                    <ul class="list-unstyled small d-flex flex-column gap-2">
+                        <li><a href="#"><i class="bi bi-chevron-right small me-1"></i>Create Account</a></li>
+                        <li><a href="#"><i class="bi bi-chevron-right small me-1"></i>Member Login</a></li>
+                        <li><a href="#"><i class="bi bi-chevron-right small me-1"></i>Help Center</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 col-lg-3">
+                    <h6>Stay Updated</h6>
+                    <p class="small mb-3">
+                        Subscribe to receive updates on upcoming events and VIP access.
+                    </p>
+                    <form class="input-group input-group-sm shapipy-newsletter">
+                        <input type="email" class="form-control" placeholder="Enter your email" required>
+                        <button class="btn btn-login px-3" type="submit"><i class="bi bi-send-fill"></i></button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center pt-4 gap-2 small">
+                <div><i class="bi bi-c-circle me-1"></i>2026 Shapipy. All rights reserved.</div>
+                <div class="d-flex gap-3">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+
+    <!-- Bootstrap 5.3 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
